@@ -1,0 +1,45 @@
+.contact
+{
+    display: flex;
+    text-align: center;
+}
+
+p
+{
+    font-size: 25px;
+    color: black;
+   
+}
+
+.addressAll
+{
+    margin-left: 400px;
+    margin-top: 80px;
+}
+.bankAll
+{
+    margin-right: 300px;
+    margin-top: 80px;
+}
+
+h3
+{
+    font-size: 30px;
+}
+
+.contact img
+{
+    z-index: -1;
+    position: absolute;
+    width: 1900px;
+    height: 860px;
+}
+
+.pay img
+{
+    position: absolute;
+    left: 1100px;
+    width: 400px;
+    height: 100px;
+}
+

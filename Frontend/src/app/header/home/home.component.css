@@ -1,0 +1,145 @@
+.header h1
+{
+    text-align: center;
+    font-size: 100px;
+    position: absolute;
+    top: 150px;
+    left: 780px;
+    
+}
+
+.some
+{
+    border-bottom: 2px solid;
+    padding: 30px;
+    opacity: 0.7;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.container
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header img
+{
+    z-index: -1;
+    width: 1900px;
+    height: 600px;
+}
+
+.prudential h1
+{
+    margin-top: 50px;
+    border-bottom: 2px double;
+    width: 300px;
+    margin-left: 810px;
+}
+
+.text p
+{
+    text-align: center;
+    font-size: 25px;
+    margin: 30px;
+    opacity: 0.8;
+}
+
+.picture
+{
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+.picture img
+{
+    
+    width: 500px;
+    height: 400px;
+}
+
+.restaurant h1
+{
+    margin-top: 50px;
+    border-bottom: 2px double;
+    width: 300px;
+    margin-left: 810px;
+}
+
+.rest 
+{
+    margin-top: 60px;
+    display: flex;
+}
+
+.rest p 
+{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 25px;
+}
+
+.offers
+{
+    display: flex;
+    margin-top: 100px;
+}
+
+.spa, .wellness, .cardio
+{
+    border: 2px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 700px;
+    height: 400px;
+}
+
+.spa img , .wellness img , .cardio img
+{
+    margin-top: 20px;
+}
+
+.spa h1 , .wellness h1 , .cardio h1
+{
+    border-bottom: 2px solid black ;
+    width: 300px;
+    margin-left: 110px;
+}
+
+.spa p , .wellness p , .cardio p
+{
+    font-size: 30px;
+    text-align: center;
+    margin: 50px;
+    
+}
+
+.h
+{
+    margin-top: 50px;
+    border-bottom: 2px double;
+    width: 300px;
+    margin-left: 810px;
+}
+
+.app
+{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+.text2 h1
+{
+    
+    width: 600px;
+    margin-top: 100px;
+}
+
+footer
+{
+    text-align: center;
+    margin-top: 50px;
+}

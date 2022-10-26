@@ -1,0 +1,76 @@
+img
+{
+    height: 100px;
+    width: 200px;
+}
+
+table
+{
+    width: 1880px;
+    text-align: center;
+    font-size: 20px;
+ 
+}
+
+h1
+{
+    text-align: center;
+    border-bottom: 2px solid black ;
+    font-size: 50px;
+}
+
+input , label 
+{
+    font-size: 20px;
+}
+
+form button
+{
+    width: 400px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+form button:hover
+{
+    background-color: bisque;
+    cursor: pointer;
+}
+
+
+form
+{
+    text-align: center;
+}
+
+table button
+{
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+table button:hover
+{
+    background-color: red;
+    cursor: pointer;
+}
+
+.option
+{
+    text-align: center;
+    margin: 20px;
+}
+
+.option button 
+{
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.option button:hover
+{
+    background-color: bisque;
+    cursor: pointer;
+}

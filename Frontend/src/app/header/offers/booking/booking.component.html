@@ -1,0 +1,48 @@
+<app-notfound
+[visible]="!booking || !booking.items.length"
+notFoundMessage="Cart page is Empty !"
+resetLinkText="Go to HomePage"
+></app-notfound>
+<div *ngIf="booking && booking.items.length" class="container">
+    <ul>
+      <li *ngFor="let cartItem of booking.items">
+        <div>
+          <img [src]="cartItem.offer.imageUrl" [alt]="cartItem.offer.name">
+        </div>
+        <div>
+          <a routerLink="/food/{{cartItem.offer.id}}">
+            {{cartItem.offer.name}}
+          </a>
+        </div>
+        <div>
+            Person: 
+          <select #quantitySelect
+          [value]="cartItem.quantity"
+          (change)="changeQuantity(cartItem, quantitySelect.value)">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        </div>
+        <div>
+          {{cartItem.price | currency}}
+        </div>
+    
+        <div>
+          <button class="remove-button" (click)="removeFromBooking(cartItem)">
+            Remove
+          </button>
+        </div>
+      </li>
+    </ul>
+    <div class="checkout">
+      <div>
+        <div class="foods-count">{{booking.totalCount}}</div>
+        <div class="total-price">{{booking.totalPrice|currency}}</div>
+      </div>
+    
+      <a routerLink="/checkout">Proceed to Checkout</a>
+    </div>
+    </div>

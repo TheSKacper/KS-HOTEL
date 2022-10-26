@@ -1,0 +1,43 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found
+[visible]="!offers || !offers.length"
+resetLinkText="Reset Search">
+</app-not-found>
+<ul>
+    <li *ngFor="let offer of offers">
+        <a routerLink="/offer/{{offer.id}}">
+            <img [src]="offer.imageUrl" [alt]="offer.name">
+            <div class="content">
+                <div class="name">
+                    {{offer.name}}
+                </div>
+                <div class="name">
+                    {{offer.type}}
+                </div>
+                <span class="favorite {{offer.favorite?'': 'not'}}" >  ❤
+
+                </span>
+                <div class="stars">
+                    <star-rating [value]="offer.stars" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="22px" [readonly]="true" ></star-rating>
+                </div>
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let tag of offer.tags">
+                            {{tag}}
+                        </span>
+                    </div>
+                    <div class="cook-time">
+                        <span> 
+                        {{offer.country}}
+                    </span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span>{{offer.price | currency}}</span>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+

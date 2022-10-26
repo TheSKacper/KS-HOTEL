@@ -1,0 +1,25 @@
+<h1>Menu</h1>
+<app-tags-r></app-tags-r>
+<hr>
+<table border="2px">
+    <tr>
+        <th>Id:</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Ingredients</th>
+        <th>Amount</th>
+        <th>Price</th>
+        <th>Picture</th>
+        
+    </tr>
+    <tr *ngFor="let food of menu; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{food.name}}</td>
+        <td>{{food.type}}</td>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.amount}}</td>
+        <td>{{food.price | currency}}</td>
+        <td><img src="{{food.image}}" alt="{{food.name}}"></td>
+    </tr>
+</table>
+
